@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Openclassrooms1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igk-AD-Vaq">
+                                <rect key="frame" x="20" y="287.5" width="374" height="30"/>
+                                <state key="normal" title="THE FUTURE"/>
+                                <connections>
+                                    <action selector="buttonFuture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Za-f2-PnD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHAZAM!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wc5-pe-sHX">
+                                <rect key="frame" x="20" y="116" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZH-fs-89m">
+                                <rect key="frame" x="20" y="590" width="374" height="30"/>
+                                <state key="normal" title="Who's Next?"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUESTION" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efk-Nd-8g1">
+                                <rect key="frame" x="20" y="179" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPO-iH-hR9">
+                                <rect key="frame" x="20" y="234.5" width="374" height="30"/>
+                                <state key="normal" title="THE PAST"/>
+                                <connections>
+                                    <action selector="buttonPast:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rC7-T1-Dye"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="efk-Nd-8g1" firstAttribute="leading" secondItem="ZPO-iH-hR9" secondAttribute="leading" id="08n-hQ-BAh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iZH-fs-89m" secondAttribute="bottom" constant="242" id="2n1-Bt-xa8"/>
+                            <constraint firstItem="ZPO-iH-hR9" firstAttribute="leading" secondItem="igk-AD-Vaq" secondAttribute="leading" id="5Gm-wX-Y0V"/>
+                            <constraint firstItem="ZPO-iH-hR9" firstAttribute="top" secondItem="efk-Nd-8g1" secondAttribute="bottom" constant="35" id="60O-Bs-tAx"/>
+                            <constraint firstItem="wc5-pe-sHX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ado-z9-I9a"/>
+                            <constraint firstItem="igk-AD-Vaq" firstAttribute="top" secondItem="ZPO-iH-hR9" secondAttribute="bottom" constant="23" id="ByZ-ey-k4V"/>
+                            <constraint firstItem="wc5-pe-sHX" firstAttribute="trailing" secondItem="efk-Nd-8g1" secondAttribute="trailing" id="DWA-KO-Z08"/>
+                            <constraint firstItem="wc5-pe-sHX" firstAttribute="leading" secondItem="efk-Nd-8g1" secondAttribute="leading" id="Ijj-vY-kGG"/>
+                            <constraint firstItem="wc5-pe-sHX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="NoV-ed-zm4"/>
+                            <constraint firstItem="efk-Nd-8g1" firstAttribute="top" secondItem="wc5-pe-sHX" secondAttribute="bottom" constant="42" id="VNm-cS-vdN"/>
+                            <constraint firstItem="ZPO-iH-hR9" firstAttribute="trailing" secondItem="igk-AD-Vaq" secondAttribute="trailing" id="YIc-eF-8ar"/>
+                            <constraint firstItem="igk-AD-Vaq" firstAttribute="trailing" secondItem="iZH-fs-89m" secondAttribute="trailing" id="dHY-kf-zUh"/>
+                            <constraint firstItem="igk-AD-Vaq" firstAttribute="leading" secondItem="iZH-fs-89m" secondAttribute="leading" id="tc0-TJ-W3M"/>
+                            <constraint firstItem="wc5-pe-sHX" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="usf-lS-KRh"/>
+                            <constraint firstItem="efk-Nd-8g1" firstAttribute="trailing" secondItem="ZPO-iH-hR9" secondAttribute="trailing" id="usu-7z-wf2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="questionLabel" destination="efk-Nd-8g1" id="EhT-sF-B8N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+</document>
