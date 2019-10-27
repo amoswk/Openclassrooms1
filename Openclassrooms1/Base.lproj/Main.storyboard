@@ -34,6 +34,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZH-fs-89m">
                                 <rect key="frame" x="20" y="590" width="374" height="30"/>
                                 <state key="normal" title="Who's Next?"/>
+                                <connections>
+                                    <action selector="buttonNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KHS-ry-NIF"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUESTION" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efk-Nd-8g1">
                                 <rect key="frame" x="20" y="179" width="374" height="20.5"/>
@@ -70,7 +73,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="futureButton" destination="igk-AD-Vaq" id="eIU-Gz-ntE"/>
+                        <outlet property="pastButton" destination="ZPO-iH-hR9" id="hPq-h4-sFG"/>
                         <outlet property="questionLabel" destination="efk-Nd-8g1" id="EhT-sF-B8N"/>
+                        <outlet property="whosNextButton" destination="iZH-fs-89m" id="vg1-me-IW8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
