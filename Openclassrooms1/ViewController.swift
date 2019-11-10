@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     let timeInterval = ["day", "year", "month"]
     
-    let player = ["One","Two", "Three", "Four", "Five", "Six"].shuffled()
+    var player = ["Player One","Player Two", "Player Three", "Player Four", "Player Five", "Player Six"].shuffled()
     
     var playerIndex = 0
     
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     let questionsFuture : Array = ["Where do you see yourself in", "Where do you want to travel in", "What would you like to improve about yourself within"]
     
-    let questionsPast : Array = ["What is the best thing you have eaten in the past", "What is your favorite childhood memory from the past", "What changed the most in the past"]
+    let questionsPast : Array = ["What is the best food you have eaten in the past", "What is your favorite memory from the past", "What changed the most in the past"]
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var pastButton: UIButton!
@@ -36,21 +36,43 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         whosNextButton.isHidden = true
-        questionLabel.text = player[playerIndex]
+        nextPlayer()
         
-    
+        
         
     }
+    
+    
+    
     func toggleButtons() {
         pastButton.isHidden = !pastButton.isHidden
-   
+        
         futureButton.isHidden = !futureButton.isHidden
-      
+        
         whosNextButton.isHidden = !whosNextButton.isHidden
-  
-      
+        
+        
         
     }
+    
+    
+    
+    func nextPlayer() {
+        
+        if playerIndex > player.count - 1 {
+            playerIndex = 0
+            player = player.shuffled()
+            
+        }
+        
+        let playerText = player[playerIndex]
+        playerIndex = playerIndex + 1
+        questionLabel.text = playerText
+        
+        
+    }
+    
+    
     func makeQuestion(questionList: [String]) -> String {
         let selectedQuestionIndex = Int(arc4random()) % questionList.count
         let randomTimeCounter = Int.random(in: 1...maximumTimeCounter)
@@ -69,12 +91,12 @@ class ViewController: UIViewController {
     @IBAction func buttonFuture(_ sender: Any) {
         
         questionLabel.text = makeQuestion(questionList: questionsFuture)
-
+        
         toggleButtons()
         
     }
     @IBAction func buttonPast(_ sender: Any) {
-       
+        
         
         questionLabel.text = makeQuestion(questionList: questionsPast)
         
@@ -83,18 +105,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction  func buttonNext(_ sender: Any) {
+        nextPlayer()
         
-        if playerIndex > player.count - 1 {
-            playerIndex = 0
-        }
-        
-        let playerText = player[playerIndex]
-        playerIndex = playerIndex + 1
-        print(playerText)
         
         toggleButtons()
-        
-        
         
     }
     

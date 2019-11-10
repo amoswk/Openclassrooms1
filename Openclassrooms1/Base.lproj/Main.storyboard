@@ -31,13 +31,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZH-fs-89m">
-                                <rect key="frame" x="20" y="590" width="374" height="30"/>
-                                <state key="normal" title="Who's Next?"/>
-                                <connections>
-                                    <action selector="buttonNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KHS-ry-NIF"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUESTION" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efk-Nd-8g1">
                                 <rect key="frame" x="20" y="179" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -51,11 +44,18 @@
                                     <action selector="buttonPast:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rC7-T1-Dye"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZH-fs-89m">
+                                <rect key="frame" x="20" y="261" width="374" height="30"/>
+                                <state key="normal" title="Who's Next?"/>
+                                <connections>
+                                    <action selector="buttonNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KHS-ry-NIF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="efk-Nd-8g1" firstAttribute="leading" secondItem="ZPO-iH-hR9" secondAttribute="leading" id="08n-hQ-BAh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iZH-fs-89m" secondAttribute="bottom" constant="242" id="2n1-Bt-xa8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iZH-fs-89m" secondAttribute="bottom" constant="571" id="2n1-Bt-xa8"/>
                             <constraint firstItem="ZPO-iH-hR9" firstAttribute="leading" secondItem="igk-AD-Vaq" secondAttribute="leading" id="5Gm-wX-Y0V"/>
                             <constraint firstItem="ZPO-iH-hR9" firstAttribute="top" secondItem="efk-Nd-8g1" secondAttribute="bottom" constant="35" id="60O-Bs-tAx"/>
                             <constraint firstItem="wc5-pe-sHX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ado-z9-I9a"/>
